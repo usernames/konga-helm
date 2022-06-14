@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-nodes-cmap
+data:
+  kong_nodes: |-
+{{ .Files.Get "configMapFiles/kong_node.data" | indent 4}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-users-cmap
+data:
+  kong_users: |-
+{{ .Files.Get "configMapFiles/kong_users.data" | indent 4}}

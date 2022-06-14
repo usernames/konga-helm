@@ -1,0 +1,8 @@
+module.exports = [
+    {
+        "name": "Kong",
+        "kong_admin_url": "http://kong-release-kong-proxy.kong.svc.cluster.local/admin",
+        "type": "default",
+        "health_checks": false,
+    }
+]

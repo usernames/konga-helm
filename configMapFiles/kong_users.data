@@ -1,0 +1,12 @@
+module.exports = [
+    {
+      "username": "Chalukya",
+      "email": "chalukya@sentieo.com",
+      "firstName": "Chalukya",
+      "lastName": "",
+      "admin": true,
+      "active": true,
+      "node_id": "http://kong-release-kong-proxy.kong.svc.cluster.local/admin",
+      "password": "Friends@123"
+    }
+]
