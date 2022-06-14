@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "konga-install.fullname" . }}
+  name: {{ include "konga.fullname" . }}
   labels:
-    {{- include "konga-install.labels" . | nindent 4 }}
+    {{- include "konga.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "konga-install.selectorLabels" . | nindent 4 }}
+    {{- include "konga.selectorLabels" . | nindent 4 }}
